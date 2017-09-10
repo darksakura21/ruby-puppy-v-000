@@ -10,7 +10,11 @@ class Dog
 
   def self.all
     @@all
-    puts @@all
+    @@all.each do |dog|
+      each dog.name
+    end
+
+    end
   end
 
   def self.clear_all
